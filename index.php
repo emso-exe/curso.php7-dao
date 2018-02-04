@@ -7,5 +7,13 @@ $sql = new Sql();
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
 echo json_encode($usuarios);
+
+echo "<hr>";
+
+$root = new Usuario();
+
+$root->loadById(3);
+
+echo $root;
 	
 ?>
